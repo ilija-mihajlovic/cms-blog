@@ -86,10 +86,10 @@ const CommentsForm = ({ slug }) => {
       </div>
       {error && <p className='text-xs text-red-500'>All fields are required</p>}
       <div className='mt-8'>
-        <button type='button' onClick={handleCommentSubmit} className='transition duration-500 ease hover:bg-indigo-900 inline-block bg-pink-600 text-lg rounded-full text-white px-8 py-3 cursor-pointer'>
+        <button type='button' onClick={handleCommentSubmit} className='xsm:flex xsm:flex-1 transition duration-500 ease hover:bg-indigo-900 md:inline-block bg-pink-600 text-lg rounded-full text-white px-8 py-3 cursor-pointer'>
           Post Comment
         </button>
-        {showSuccessMessage && <span className='text-xl float-right font-semibold mt-3 text-green-500'>Comment submitted for review</span>}
+        {showSuccessMessage && <span className='text-xl font-semibold mt-3 text-green-500 xsm:float-none xsm:flex xsm:flex-1 xsm:items-center xsm:justify-center xsm:mt-8 xsm:-mb-4 xsm:text-center md:float-right'>Comment submitted for review</span>}
       </div>
     </div>
   )
