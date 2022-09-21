@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import { getCategories } from '../services'
 
-const Categories = () => {
+const Categories2 = () => {
   const [categories, setCategories] = useState([])
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const Categories = () => {
         Categories
       </h3>
       {categories.map((category, index) => (
-        <Link href={`category/${category.slug}`} key={category.slug}>
+        <Link href={`/category/${category.slug}`} key={category.slug}>
           <span className={`cursor-pointer block ${(index === categories.length - 1) ? 'border-b-0' : 'border-b'} pb-3 mb-3`}>
             {category.name}
           </span>
@@ -27,4 +27,4 @@ const Categories = () => {
   )
 }
 
-export default Categories
+export default Categories2
